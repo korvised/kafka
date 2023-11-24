@@ -57,7 +57,7 @@ func main() {
 	accountRepo := repositories.NewAccountRepository(db)
 	accountEventHandler := services.NewAccountHandler(accountRepo)
 	accountConsumerHandler := services.NewConsumerHandler(accountEventHandler)
-	fmt.Println("Account consumer started...")
+	fmt.Println("Consumer server started 🚀🚀🚀")
 
 	for {
 		if err = consumer.Consume(context.Background(), events.Topics, accountConsumerHandler); err != nil {

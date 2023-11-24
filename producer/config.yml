@@ -1,0 +1,5 @@
+app:
+  url: :8080
+kafka:
+  servers:
+    - localhost:9092
